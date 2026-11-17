@@ -1,0 +1,29 @@
+{
+  "credentials_file": "D:/2_projects/git_projects/1DOR/fyer_code/fyers_credentials.json",
+  "log_dir": "logs",
+  "symbol_master": {
+    "url_template": "https://public.fyers.in/sym_details/{segment}.csv",
+    "cache_dir": "data/symbol_master",
+    "cache_keep_files": 3,
+    "download_timeout_s": 60,
+    "download_retries": 3,
+    "retry_backoff_s": 2
+  },
+  "fyers": {
+    "min_call_interval_s": 1.3,
+    "max_retries": 5,
+    "rate_limit_backoff_s": 60,
+    "max_rate_limit_backoffs": 2
+  },
+  "instruments": [
+    {"name": "NIFTY",      "segment": "NSE_FO"},
+    {"name": "BANKNIFTY",  "segment": "NSE_FO"},
+    {"name": "SENSEX",     "segment": "BSE_FO"},
+    {"name": "GOLD",       "segment": "MCX_COM"},
+    {"name": "GOLDM",      "segment": "MCX_COM"},
+    {"name": "SILVER",     "segment": "MCX_COM"},
+    {"name": "SILVERM",    "segment": "MCX_COM"},
+    {"name": "NATURALGAS", "segment": "MCX_COM"},
+    {"name": "CRUDEOIL",   "segment": "MCX_COM"}
+  ]
+}

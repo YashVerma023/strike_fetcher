@@ -1,0 +1,11 @@
+# runtime output: daily symbol-master cache and logs
+data/
+logs/
+
+# credentials never belong in git (the default credentials file lives in the DOR project)
+fyers_credentials.json
+
+__pycache__/
+*.pyc
+.venv/
+.data/
